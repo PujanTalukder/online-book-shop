@@ -1,0 +1,151 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -5rem;
+  padding: 0 5rem;
+}
+
+.hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -2rem;
+}
+
+.hero-text-heading {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 55px;
+  font-weight: 600;
+  margin-right: 0.8rem;
+}
+
+.hero-img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.formWrapper {
+  display: flex;
+  width: 385px;
+  justify-content: flex-start;
+}
+
+.searchInputWrapper {
+  background: #fff;
+  border-radius: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.171);
+}
+
+.searchInput {
+  width: 90%;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+::placeholder {
+  color: #a1a1a1;
+}
+
+/* hide the placeholder text on focus */
+:focus::placeholder {
+  text-indent: -999px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchInputIcon {
+  align-self: center;
+  color: #a1a1a1;
+  margin-left: 15px;
+}
+
+.searchBtn {
+  background-color: #1e1d1e; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 6px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  .flex-container {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .hero-text-heading {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-text-heading h1 {
+    font-size: 25px;
+  }
+  .hero-text {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .formWrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .formWrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .hero-text-heading h1 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .flex-container {
+    margin-top: auto;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .flex-container {
+    margin-top: -13.5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .flex-container {
+    margin-top: -6.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .flex-container {
+    margin-top: -7rem;
+  }
+}

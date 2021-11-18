@@ -1,0 +1,129 @@
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 18px 18px;
+}
+
+.link-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 6px 8px;
+}
+
+.link-heading {
+  font-weight: 400;
+  color: #a3a3a3;
+}
+
+.links-anchor {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 2px;
+}
+
+.links-anchor:hover {
+  color: #efe5d8;
+}
+
+#icons {
+  font-size: 18px;
+}
+
+.newsletter-wrapper {
+  padding: 1.5rem 0;
+}
+.newsletter-heading {
+  padding-bottom: 0.8rem;
+  text-align: center;
+  padding: 0 8px;
+}
+.newsletter-heading span {
+  color: #fff;
+  font-size: 22px;
+}
+.newsletter-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+}
+.newsletter-form-wrapper {
+  width: 100%;
+  background: transparent;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.newsletter-form-wrapper input {
+  width: 240px;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+.newsletter-form-wrapper input:focus {
+  outline: none;
+}
+
+.newsletter-form-wrapper button {
+  background-color: #a3a3a3;
+  border: none;
+  color: #fff;
+  padding: 8px 18px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 2px 6px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.4rem;
+}
+
+.developer-name {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.developer-name span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media screen and (max-width: 490px) {
+  .newsletter-form-wrapper input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .link-heading {
+    font-size: 12px;
+  }
+  .links-anchor {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

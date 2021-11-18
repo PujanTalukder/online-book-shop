@@ -1,0 +1,67 @@
+.discount-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5rem;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.text h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #1e1d1e;
+}
+
+.text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1e1d1e;
+}
+
+.image-wrapper {
+  width: 100%;
+  object-fit: contain;
+  max-width: 500px;
+  padding-bottom: 2rem;
+}
+.shopnow-btn-link {
+  background-color: #1e1d1e;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 2px 0;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.4rem;
+}
+.shopnow-btn-link:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .discount-container {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .text h2 {
+    font-size: 27px;
+  }
+
+  .text h1 {
+    font-size: 40px;
+  }
+}

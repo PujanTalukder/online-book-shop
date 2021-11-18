@@ -1,0 +1,17 @@
+button.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+button.rec.rec-arrow:hover {
+  background: #1e1d1e;
+}
+
+button.rec-dot {
+  box-shadow: 0 0 1px 3px #1e1d1e;
+}
+
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus {
+  box-shadow: 0 0 1px 3px #1e1d1e;
+  background-color: #1e1d1e;
+}

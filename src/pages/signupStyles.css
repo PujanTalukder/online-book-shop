@@ -1,0 +1,95 @@
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1d1e;
+}
+.login-container {
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.login-container form .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+
+.login-container form .title:before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0px;
+  bottom: 3px;
+  left: 0;
+  border-radius: 5px;
+  background: linear-gradient(to right, #000000 0%, #403d3e 100%);
+}
+
+.login-container form .input-box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.login-container form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+
+.login-container form .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+
+.login-container form .underline:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #000000 0%, #403d3e 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+.login-container form .input-box input:focus ~ .underline:after,
+.login-container form .input-box input:valid ~ .underline:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.login-container form .button {
+  margin: 40px 0 20px 0;
+}
+
+.login-container form .input-box input[type="submit"] {
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #1e1d1e;
+  transition: all 0.3s ease;
+}
+
+.login-container .option {
+  font-size: 14px;
+  text-align: center;
+}
