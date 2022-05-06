@@ -20,7 +20,9 @@ const Discount = () => {
             </p>
           </div>
           <div className="shopnow-btn">
-            <Link className="shopnow-btn-link">Shop now</Link>
+            <Link className="shopnow-btn-link" to="/">
+              Shop now
+            </Link>
           </div>
         </Col>
         <Col className="column2">

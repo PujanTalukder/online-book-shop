@@ -25,7 +25,7 @@ const Popular = () => {
           <h2>Popular Now</h2>
         </div>
         <div className="mx-2">
-          <Link style={{ textDecoration: "none" }}>
+          <Link style={{ textDecoration: "none" }} to="/">
             <h3>View all</h3>
           </Link>
         </div>

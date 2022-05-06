@@ -12,10 +12,10 @@
   opacity: 0;
 }
 
-.sidebarContainer.active {
+.sidebarContainer .active {
   top: 0;
   opacity: 100%;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 .closeIcon {
